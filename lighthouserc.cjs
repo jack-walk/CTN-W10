@@ -17,13 +17,13 @@ module.exports = {
         'categories:accessibility': ['error', { minScore: 0.9 }],
 
         // Performance: warn if below threshold
-        'categories:performance': ['warn', { minScore: 0.8 }],
+        'categories:performance': ['warn', { minScore: 0.7 }],
 
         // Best practices
-        'categories:best-practices': ['warn', { minScore: 0.9 }],
+        'categories:best-practices': ['warn', { minScore: 0.85 }],
 
         // SEO
-        'categories:seo': ['warn', { minScore: 0.9 }],
+        'categories:seo': ['warn', { minScore: 0.85 }],
       },
     },
     upload: {

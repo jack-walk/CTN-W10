@@ -37,16 +37,19 @@ USAGE EXAMPLE:
     layout = {}, // MapLibre layout properties
   } = $props();
 
-  if (typeof id !== 'string' || id.trim() === '') {
-    throw new Error('MapLayer requires a non-empty string "id" prop.');
-  }
-
   const ctx = getContext('maplibre-map');
   if (!ctx) {
     throw new Error(
       'MapLayer must be placed inside a Map component. No map context found.'
     );
   }
+
+  // Validate id in an effect to avoid direct prop reference
+  $effect(() => {
+    if (typeof id !== 'string' || id.trim() === '') {
+      throw new Error('MapLayer requires a non-empty string "id" prop.');
+    }
+  });
 
   /** Adds the source and layer to the map. */
   function addLayer() {
@@ -101,9 +104,13 @@ USAGE EXAMPLE:
   });
 
   // Track previous paint keys so we can unset removed properties
-  let previousPaintKeys = Object.keys(paint);
+  let previousPaintKeys = $state([]);
 
   // Reactively update paint properties when paint prop changes
+  $effect(() => {
+    previousPaintKeys = Object.keys(paint);
+  });
+
   $effect(() => {
     const map = ctx.getMap();
     if (!map || !map.getLayer(id)) return;
