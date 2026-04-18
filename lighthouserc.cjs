@@ -7,6 +7,8 @@ module.exports = {
       // Test the main page
       url: ['http://localhost/'],
       numberOfRuns: 1,
+      // Start a local server to serve the static build
+      startServerCommand: 'npm install -g http-server && http-server ./build -p 80 --gzip',
     },
     assert: {
       assertions: {
