@@ -59,7 +59,7 @@ jobs:
       - name: Lighthouse CI
         run: |
           npm install -g @lhci/cli http-server
-          http-server build -p 80 -s &
+          http-server build -p 8080 -s &
           sleep 2
           lhci autorun
           pkill -f "http-server"
