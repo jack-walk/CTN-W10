@@ -70,7 +70,7 @@ USAGE EXAMPLE:
       source: 'locator-dot',
       paint: {
         'circle-radius': 8,
-        'circle-color': '#0033A1',
+        'circle-color': 'rgb(45, 73, 39)',
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff',
       },

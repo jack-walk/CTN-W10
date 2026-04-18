@@ -48,7 +48,7 @@ USAGE EXAMPLE:
   .slide {
     height: 100%;
     flex: 0 0 100%;
-    background: black;
+    background: #bebfb5;
     display: flex;
     flex-direction: column;
   }
@@ -138,7 +138,7 @@ USAGE EXAMPLE:
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    color: white;
+    color: var(--color-accent);
     text-align: center;
   }
 
@@ -146,7 +146,7 @@ USAGE EXAMPLE:
     font-size: 2rem;
     line-height: 1.2;
     margin: 0 0 1rem;
-    color: white;
+    color: var(--color-accent);
 
     @container (min-width: 768px) {
       font-size: 3.5rem;
@@ -180,7 +180,7 @@ USAGE EXAMPLE:
     opacity: 0.6;
     margin: 0;
     padding-bottom: 3.5rem;
-    color: white;
+    color: var(--color-accent);
     display: flex;
     justify-content: center;
   }

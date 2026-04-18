@@ -233,7 +233,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    color: var(--color-accent, #003da5);
+    color: var(--color-accent, rgb(45, 73, 39));
   }
 
   .no-results {

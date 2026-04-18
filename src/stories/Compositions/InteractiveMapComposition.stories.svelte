@@ -102,7 +102,7 @@
           data={markerData}
           paint={{
             'circle-radius': 10,
-            'circle-color': '#0033A1',
+            'circle-color': 'rgb(45, 73, 39)',
             'circle-stroke-width': 3,
             'circle-stroke-color': '#ffffff',
           }}

@@ -100,7 +100,7 @@ USAGE EXAMPLE:
 
   .gallery-wrapper {
     height: 100dvh;
-    background: black;
+    background: #bebfb5;
     container-type: inline-size;
     overflow: hidden;
   }
@@ -153,7 +153,7 @@ USAGE EXAMPLE:
   .arrow-hint {
     display: none;
     font-size: 2rem;
-    color: white;
+    color: var(--color-accent);
     opacity: 0;
     transition: opacity 0.2s ease;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);

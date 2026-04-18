@@ -17,7 +17,7 @@ USAGE EXAMPLE:
     id="my-points"
     type="circle"
     data={geojsonData}
-    paint={{ 'circle-radius': 6, 'circle-color': '#0033A1' }}
+    paint={{ 'circle-radius': 6, 'circle-color': 'rgb(45, 73, 39)' }}
   />
 </Map>
 -->

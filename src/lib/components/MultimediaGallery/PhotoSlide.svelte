@@ -25,9 +25,11 @@ USAGE EXAMPLE:
   <img src="{base}/photos/{photo.filename}" alt={photo.title} />
   <div class="caption">
     <div class="caption-inner">
-      <h2>{photo.title}</h2>
-      <p>{photo.caption}</p>
-      <span class="credit">{photo.credit}</span>
+      <h2><span class="text-highlight">{photo.title}</span></h2>
+      <p><span class="text-highlight">{photo.caption}</span></p>
+      <span class="credit"
+        ><span class="text-highlight">{photo.credit}</span></span
+      >
     </div>
   </div>
 </div>
@@ -37,7 +39,7 @@ USAGE EXAMPLE:
     height: 100%;
     flex: 0 0 100%;
     position: relative;
-    background: black;
+    background: #bebfb5;
 
     @container (min-width: 768px) {
       display: flex;
@@ -67,12 +69,12 @@ USAGE EXAMPLE:
       rgba(0, 0, 0, 0.4) 70%,
       transparent 100%
     );
-    color: white;
+    color: var(--color-accent);
 
     @container (min-width: 768px) {
       position: static;
       width: 40%;
-      background: black;
+      background: #bebfb5;
       display: flex;
       align-items: center;
       padding: 3rem;
@@ -87,7 +89,7 @@ USAGE EXAMPLE:
     margin: 0 0 0.5rem;
     font-size: 1.25rem;
     line-height: 1.3;
-    color: white;
+    color: var(--color-accent);
 
     @container (min-width: 768px) {
       font-size: 1.75rem;
@@ -115,5 +117,12 @@ USAGE EXAMPLE:
     @container (min-width: 768px) {
       font-size: 0.8125rem;
     }
+  }
+
+  .text-highlight {
+    background-color: #bebfb5;
+    padding: 0.1em 0.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 </style>

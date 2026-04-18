@@ -10,8 +10,8 @@
 
 <SlideGallery>
   <TitleSlide
-    headline="Harlem, 1943"
-    intro="How the street photography of Gordon Parks captured the spirit of black New York"
+    headline="Gateway to the Mountains"
+    intro="The covered bridges of Thurmont, Maryland."
   />
 
   {#each data.story as slide (slide.id)}
@@ -25,10 +25,7 @@
   <CreditsSlide>
     <h2>About These Photographs</h2>
     <p>
-      The Harlem negatives are held by the Library of Congress and are free for anyone to
-      download and reuse. High-resolution scans are available in the
-      <a href="https://www.loc.gov/pictures/search/?q=gordon+parks+harlem&co=fsa" target="_blank">
-        Prints &amp; Photographs Division</a>'s digital collection.
+      These photos were taken by Carol M. Highsmith, a photographer who has donated more than 100,000 photographs to the <a href="https://www.loc.gov/pictures/collection/highsm/" target="_blank">Library of Congress</a> since 1990.
     </p>
   </CreditsSlide>
 </SlideGallery>

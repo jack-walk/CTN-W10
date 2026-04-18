@@ -117,7 +117,7 @@
       data={nycLandmarks}
       paint={{
         'circle-radius': 8,
-        'circle-color': '#0033A1',
+        'circle-color': 'rgb(45, 73, 39)',
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff',
       }}
@@ -135,7 +135,7 @@
       type="line"
       data={brooklynBridgeLine}
       paint={{
-        'line-color': '#0033A1',
+        'line-color': 'rgb(45, 73, 39)',
         'line-width': 4,
       }}
       layout={{
@@ -156,7 +156,7 @@
       type="fill"
       data={centralParkPolygon}
       paint={{
-        'fill-color': '#0033A1',
+        'fill-color': 'rgb(45, 73, 39)',
         'fill-opacity': 0.3,
       }}
     />
@@ -165,7 +165,7 @@
       type="line"
       data={centralParkPolygon}
       paint={{
-        'line-color': '#0033A1',
+        'line-color': 'rgb(45, 73, 39)',
         'line-width': 2,
       }}
     />
@@ -210,7 +210,7 @@
       data={nycLandmarks}
       paint={{
         'circle-radius': 7,
-        'circle-color': '#0033A1',
+        'circle-color': 'rgb(45, 73, 39)',
         'circle-stroke-width': 2,
         'circle-stroke-color': '#ffffff',
       }}

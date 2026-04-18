@@ -83,7 +83,7 @@ RankingCard.svelte — A horizontal card showing rank, optional image, title, an
     font-weight: 700;
     min-width: 2ch;
     text-align: center;
-    color: var(--color-accent, #003da5);
+    color: var(--color-accent, rgb(45, 73, 39));
   }
 
   .thumbnail {
