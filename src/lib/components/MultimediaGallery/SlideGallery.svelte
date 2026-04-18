@@ -82,12 +82,13 @@ USAGE EXAMPLE:
     {#if totalSlides > 1}
       <div class="dots" aria-label="Slide indicators">
         {#each Array.from({ length: totalSlides }, (_, i) => i) as i (i)}
-          <span
+          <button
             class="dot"
             class:active={i === currentSlide}
-            aria-label="Slide {i + 1}"
+            aria-label="Go to slide {i + 1}"
             aria-current={i === currentSlide ? 'true' : undefined}
-          ></span>
+            onclick={() => (currentSlide = i)}
+          ></button>
         {/each}
       </div>
     {/if}
@@ -192,6 +193,19 @@ USAGE EXAMPLE:
     background: white;
     opacity: 0.4;
     transition: opacity 0.2s ease;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .dot:focus-visible {
+    outline: 2px solid var(--color-white);
+    outline-offset: 2px;
+  }
+
+  .dot:hover {
+    opacity: 0.7;
   }
 
   .dot.active {
