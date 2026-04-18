@@ -5,10 +5,11 @@ module.exports = {
       // Use the SvelteKit static build output
       staticDistDir: './build',
       // Test the main page
-      url: ['http://localhost/'],
+      url: ['http://localhost:3000/'],
       numberOfRuns: 1,
       // Start a local server to serve the static build
-      startServerCommand: 'npm install -g http-server && http-server ./build -p 80 --gzip',
+      startServerCommand: 'npx http-server ./build -p 3000 --gzip',
+      waitForLoad: true,
     },
     assert: {
       assertions: {
